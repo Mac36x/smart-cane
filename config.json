@@ -1,0 +1,55 @@
+{
+    "model_folder": "model",
+    "model_file": "SSD-mobilenet-v2-FPNLite-50k-step.tflite",
+    "model_classes": [
+            "Car",
+            "Cat",
+            "Dog",
+            "Motorcycle",
+            "Pole",
+            "Trafficcone",
+            "Tree",
+            "Person",
+            "Bicycle",
+            "Door"
+    ],
+    "config":{
+        "image_width": 640,
+        "image_height": 480,
+        "min_conf_threshold": 0.35,
+        "input_mean": 127.5,
+        "input_std": 127.5,
+        "focal_length": 1333.3,
+        "known_distance": 187.5,
+        "warning_delay": 0.5
+    },
+    "lineconfig":{
+        "leftline": 240,
+        "rightline": 480,
+        "one_meter": 440,
+        "two_meter": 350,
+        "three_meter": 305
+    },
+    "ultrasonic":{
+        "trigger_pin1": 27,
+        "echo_pin1": 17,
+        "trigger_pin2": 24,
+        "echo_pin2": 23,
+        "distant_one_alert": 50,
+        "distant_two_alert": 15
+    },
+    "switch":{
+        "switch_mode": 8,
+        "switch_snapshot": 7
+    },  
+    "buzzer":{
+        "buzzer_pin": 25
+    },
+    "battery":{
+        "battery_check_time": 30
+    },
+    "audio":{
+        "audio_path": "/home/raspberrypi/Desktop/SmartCane/audio/"
+    }
+}
+
